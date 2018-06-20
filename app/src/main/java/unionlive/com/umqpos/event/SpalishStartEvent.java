@@ -1,7 +1,7 @@
 package unionlive.com.umqpos.event;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2017/1/16 18:31
  * @describe ${TODO}
  */

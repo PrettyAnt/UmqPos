@@ -5,7 +5,7 @@ import java.util.List;
 import unionlive.com.umqpos.entitys.out_waimai.QueryDishResponse;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/30 19:31
  * @describe ${TODO}
  */

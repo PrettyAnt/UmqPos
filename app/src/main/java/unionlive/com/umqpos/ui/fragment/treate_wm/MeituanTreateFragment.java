@@ -43,7 +43,7 @@ import unionlive.com.umqpos.utils.TimeHelper;
 import static unionlive.com.umqpos.content.Fields.DAY_FLAG_MEITUAN;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/15 14:40
  * @describe 这是-->外卖-->已处理-->美团商家的界面
  */

@@ -29,7 +29,7 @@ import unionlive.com.umqpos.utils.TimerTaskHelper;
 import static unionlive.com.umqpos.pwd.DatagramSign.desAndMd5Decoder;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/7 23:03
  * @describe 网络框架
  */

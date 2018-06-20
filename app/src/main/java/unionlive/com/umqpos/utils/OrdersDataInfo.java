@@ -10,7 +10,7 @@ import static com.landicorp.android.eptapi.device.Printer.ERROR_PAPERENDED;
 import static com.landicorp.android.eptapi.device.Printer.ERROR_PAPERJAM;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2017/2/14 15:12
  * @describe ${TODO}
  */

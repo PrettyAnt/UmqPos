@@ -44,7 +44,7 @@ import unionlive.com.umqpos.ui.dialog.MyToast;
 import unionlive.com.umqpos.utils.TimeHelper;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/15 16:22
  * @describe 这是外卖--->未处理---->全部的界面
  */

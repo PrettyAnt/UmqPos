@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Locale;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/6 9:33
  * @describe 此类主要用来处理位置信息
  */

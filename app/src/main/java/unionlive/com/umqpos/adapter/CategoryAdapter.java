@@ -13,7 +13,7 @@ import unionlive.com.umqpos.holder.CategoryViewHolder;
 import unionlive.com.umqpos.imp.ItemClickListener;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/20 9:53
  * @describe 菜品详情
  */

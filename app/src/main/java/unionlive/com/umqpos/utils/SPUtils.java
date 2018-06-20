@@ -8,7 +8,7 @@ import java.lang.reflect.Method;
 import java.util.Map;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 创建时间    2016/11/18 17:03
  * @describe$ { 这是统一设备管理类,里面包含绑定设备,解绑设备,获取设备SN等方法}
  * 对SharedPreference的使用做了建议的封装，对外公布出put，get，remove，clear等等方法；

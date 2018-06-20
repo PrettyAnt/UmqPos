@@ -15,7 +15,7 @@ import unionlive.com.umqpos.BuildConfig;
 import unionlive.com.umqpos.content.Fields;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2017/1/16 19:59
  * @describe ${TODO}
  */

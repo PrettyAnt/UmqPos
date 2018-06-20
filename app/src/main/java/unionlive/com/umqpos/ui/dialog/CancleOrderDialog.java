@@ -21,7 +21,7 @@ import unionlive.com.umqpos.service.ApkDownService;
 import unionlive.com.umqpos.utils.TimerTaskHelper;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2017/1/4 20:27
  * @describe $相应的对话框
  */

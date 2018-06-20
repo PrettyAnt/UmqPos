@@ -40,7 +40,7 @@ import unionlive.com.umqpos.utils.SPUtils;
 
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2017/2/7 9:36
  * @describe ${TODO}
  */

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import unionlive.com.umqpos.bean.FragmentInfo;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/15 14:17
  * @describe ${TODO}
  */

@@ -16,7 +16,7 @@ import unionlive.com.umqpos.bean.FragmentInfo;
 import unionlive.com.umqpos.utils.PagerSlidingTab;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/14 10:44
  * @describe 这是处理管理界面的activity
  */

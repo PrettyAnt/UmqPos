@@ -3,7 +3,7 @@ package unionlive.com.umqpos.bean;
 import unionlive.com.umqpos.content.Fields;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2017/1/11 14:49
  * @describe $状态栏的信息
  */

@@ -42,7 +42,7 @@ import unionlive.com.umqpos.utils.LdPrintStatus;
 import unionlive.com.umqpos.utils.LdPrintWaimai;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2017/1/17 13:27
  * @describe 订单详情这块已处理和未处理公用的一个界面，他们之间的区别是订单状态不同--->>显示的按钮不同
  * 如果上送的报文的状态的101

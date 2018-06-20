@@ -1,7 +1,7 @@
 package unionlive.com.umqpos.utils;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2017/1/3 14:44
  * @describe $转换券号
  */

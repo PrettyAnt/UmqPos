@@ -10,7 +10,7 @@ import unionlive.com.umqpos.R;
 import unionlive.com.umqpos.ui.BaseActivity;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2017/2/13 3:23
  * @describe ${TODO}
  */

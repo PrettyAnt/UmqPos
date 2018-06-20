@@ -40,7 +40,7 @@ import unionlive.com.umqpos.utils.SoundPlayUtils;
 import static unionlive.com.umqpos.R.id.bt_setting_print_test;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/15 17:18
  * @describe 外卖-->管理--->设置
  */

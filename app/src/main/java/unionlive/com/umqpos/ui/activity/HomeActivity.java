@@ -32,8 +32,9 @@ import unionlive.com.umqpos.utils.SPUtils;
 import static unionlive.com.umqpos.content.Fields.loginsessionId;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/12 16:46
+ * @Author's GitHub  https://github.com/PrettyAnt
  * @describe ${TODO}
  */
 public class HomeActivity extends BaseActivity implements View.OnClickListener {

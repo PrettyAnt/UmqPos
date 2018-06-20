@@ -1,7 +1,7 @@
 package unionlive.com.umqpos.entitys.out_waimai;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/7 23:41
  * @describe 客户端应版本查询响应密文的实体类
  */

@@ -1,7 +1,7 @@
 package unionlive.com.umqpos.entitys.out_waimai;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/9 10:19
  * @describe T410-新增菜品返回报文
  */

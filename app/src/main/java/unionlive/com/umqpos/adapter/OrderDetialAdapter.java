@@ -12,7 +12,7 @@ import unionlive.com.umqpos.entitys.out_waimai.DetialResponse;
 import unionlive.com.umqpos.holder.OrderDetialViewHolder;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/20 9:53
  * @describe 菜品详情
  */

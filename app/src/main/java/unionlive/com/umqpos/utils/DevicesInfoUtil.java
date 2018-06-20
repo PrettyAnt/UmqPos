@@ -20,7 +20,7 @@ import cn.weipass.pos.sdk.impl.WeiposImpl;
 import unionlive.com.umqpos.content.Fields;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 创建时间    2016/10/14 17:03
  * @describe ${ 这是统一设备管理类,里面包含绑定设备,解绑设备,获取设备SN等方法
  * 进入设备前,需要对设备类型进行进行判断,在对相应的设备进行绑定,否则会出现异常!!!

@@ -3,7 +3,7 @@ package unionlive.com.umqpos.utils;
 import java.util.concurrent.ArrayBlockingQueue;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2017/2/10 16:41
  * @describe ${TODO}
  */

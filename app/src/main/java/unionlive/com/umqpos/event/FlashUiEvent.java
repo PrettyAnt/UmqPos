@@ -3,7 +3,7 @@ package unionlive.com.umqpos.event;
 import unionlive.com.umqpos.ui.BaseFragment;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/29 16:02
  * @describe ${TODO}
  */

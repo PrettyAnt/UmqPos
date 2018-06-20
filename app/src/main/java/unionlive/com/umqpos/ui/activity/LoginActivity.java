@@ -39,8 +39,9 @@ import unionlive.com.umqpos.utils.TimerTaskHelper;
 
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/11/30 11:41
+ * @Author's GitHub  https://github.com/PrettyAnt
  * @describe $登录界面
  */
 public class LoginActivity extends BaseActivity implements View.OnClickListener, TextWatcher {

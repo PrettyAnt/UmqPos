@@ -1,7 +1,7 @@
 package unionlive.com.umqpos.entitys.in_waimai;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/9 9:39
  * @describe 新增菜品分类  同步外卖平台
  */

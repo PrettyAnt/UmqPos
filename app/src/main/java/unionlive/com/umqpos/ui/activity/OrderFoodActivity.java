@@ -36,7 +36,7 @@ import unionlive.com.umqpos.ui.fragment.untreate_wm.UnTreatedFragment;
 import static unionlive.com.umqpos.bean.TitleInfomation.title_flag_treate;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/13 17:48
  * @describe 这是处理外卖的activity
  */

@@ -12,7 +12,7 @@ import unionlive.com.umqpos.bean.TitleInfomation;
 import unionlive.com.umqpos.event.PrinterErrorEvent;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/26 0:31
  * @describe $这里是单独给验券提供的打印方法
  */

@@ -3,7 +3,7 @@ package unionlive.com.umqpos.entitys.out_waimai;
 import java.util.List;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/8 17:52
  * @describe 订单详情查询 // FixMe
  */

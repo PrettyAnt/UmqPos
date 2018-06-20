@@ -18,7 +18,7 @@ import unionlive.com.umqpos.net.NetUtil;
 import static unionlive.com.umqpos.utils.DevicesInfoUtil.getTermSn;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2017/2/9 10:49
  * @describe ${TODO}
  */

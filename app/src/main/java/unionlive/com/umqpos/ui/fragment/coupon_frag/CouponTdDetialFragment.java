@@ -37,7 +37,7 @@ import static unionlive.com.umqpos.content.Fields.shopOperId;
 import static unionlive.com.umqpos.content.Fields.termId;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/28 16:53
  * @describe ${TODO}
  */

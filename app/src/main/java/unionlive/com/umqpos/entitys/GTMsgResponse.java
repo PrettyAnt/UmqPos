@@ -1,7 +1,7 @@
 package unionlive.com.umqpos.entitys;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2017/1/5 13:39
  * @describe $这是服务端返回过来的json数据
  */

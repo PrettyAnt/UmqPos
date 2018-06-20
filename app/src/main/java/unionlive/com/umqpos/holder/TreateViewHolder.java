@@ -13,7 +13,7 @@ import unionlive.com.umqpos.imp.ItemClickListener;
 import static unionlive.com.umqpos.R.id.iv_order_status_paystatus;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/21 11:30
  * @describe ${TODO}
  */

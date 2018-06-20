@@ -1,7 +1,7 @@
 package unionlive.com.umqpos.entitys.in_coupons;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/2 13:18
  * @describe 客户端应用校验_验券的接口_进入app前的客户端校验，本来使用外卖的接口，
  */

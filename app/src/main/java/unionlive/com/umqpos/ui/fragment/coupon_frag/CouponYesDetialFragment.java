@@ -34,7 +34,7 @@ import unionlive.com.umqpos.utils.SPUtils;
 import unionlive.com.umqpos.utils.TimeHelper;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/28 16:53
  * @describe ${TODO}
  */

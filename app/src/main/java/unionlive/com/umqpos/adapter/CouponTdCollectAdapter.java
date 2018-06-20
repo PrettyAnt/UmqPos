@@ -12,7 +12,7 @@ import unionlive.com.umqpos.entitys.out_coupons.QueryTransBasicResponse;
 import unionlive.com.umqpos.holder.CouponTdCollectViewHolder;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/28 18:32
  * @describe ${TODO}
  */

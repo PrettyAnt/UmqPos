@@ -6,7 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/7 21:14
  * @describe $获取当前时间  因为这里获取的时间是系统时间,不是实时的网络时间,实际
  * 情况最好肯定是网络时间了,但由于在联迪设备中通过LoctionManager获取不到时间,在android

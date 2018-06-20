@@ -55,7 +55,7 @@ import static unionlive.com.umqpos.pwd.DatagramSign.desAndMd5Encrypt;
 import static unionlive.com.umqpos.utils.TimeHelper.getSubmitTime;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/7 21:06
  * @describe 此类只处理上送的Json数据,
  */

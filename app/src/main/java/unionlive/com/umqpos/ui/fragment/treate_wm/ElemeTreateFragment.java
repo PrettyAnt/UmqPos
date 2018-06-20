@@ -43,7 +43,7 @@ import unionlive.com.umqpos.utils.TimeHelper;
 import static unionlive.com.umqpos.content.Fields.DAY_FLAG_ELEME;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/15 14:43
  * @describe 这是-->外卖-->已处理-->饿了么商家的界面
  */

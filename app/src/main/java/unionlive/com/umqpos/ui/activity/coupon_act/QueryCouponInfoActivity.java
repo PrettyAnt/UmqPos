@@ -24,7 +24,7 @@ import unionlive.com.umqpos.ui.fragment.coupon_frag.YestodayDetialFragment;
 import unionlive.com.umqpos.ui.dialog.CancleOrderDialog;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/28 15:48
  * @describe ${TODO}
  */

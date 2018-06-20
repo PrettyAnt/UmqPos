@@ -14,7 +14,7 @@ import static com.landicorp.android.eptapi.device.Printer.ERROR_PAPERENDED;
 import static com.landicorp.android.eptapi.device.Printer.ERROR_PAPERJAM;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/26 0:31
  * @describe $这里得到联迪设备的打印状态
  */

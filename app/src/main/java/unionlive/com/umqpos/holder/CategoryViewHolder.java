@@ -8,7 +8,7 @@ import unionlive.com.umqpos.R;
 import unionlive.com.umqpos.imp.ItemClickListener;
 
 /**
- * @author chenyu   Email:981214993@qq.com  T:15921892585
+ * @author chenyu   Email:981214993@qq.com
  * @version 2016/12/26 12:40
  * @describe ${TODO}
  */
