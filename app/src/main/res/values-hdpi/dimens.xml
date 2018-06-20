@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--标题栏属性-->
+    <dimen name="head_height">45dp</dimen>
+    <dimen name="jiange">15px</dimen>
+    <dimen name="left_distance">15dp</dimen>
+    <dimen name="right_distance">35dp</dimen>
+    <!--状态栏标题的 字体-->
+    <dimen name="title_state_size">40px</dimen>
+    <dimen name="line_to_bottom">15dp</dimen>
+    <dimen name="item_bd_to_left_distance">160dp</dimen>
+    <dimen name="order_pic_size">80dp</dimen>
+
+</resources>

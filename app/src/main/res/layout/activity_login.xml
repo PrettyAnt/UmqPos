@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FDFDFE"
+              android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo"
+        />
+
+    <EditText
+        android:id="@+id/et_login_shopOperId"
+        style="@style/style_input"
+        android:drawableLeft="@drawable/person_common"
+        android:hint="@string/p02_signin_str02"/>
+
+    <EditText
+        android:id="@+id/et_login_pwd"
+        style="@style/style_input"
+        android:drawableLeft="@drawable/code_common"
+        android:hint="@string/p02_signin_str03"
+        android:inputType="textPassword"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cb_login_rmbpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="记住密码"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bt_login_shap"
+        android:onClick="sign"
+        android:text="签到"
+        android:textColor="#fff"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_login_envri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:text="测试环境"/>
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/logo_tel"/>
+        <TextView
+            android:id="@+id/tv_login_deviceInfo"
+            android:padding="6dp"
+            android:textColor="#000"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="手机POS\t4.0\t\tSN:123456"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

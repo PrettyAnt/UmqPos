@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="#191919"
+    android:orientation="vertical">
+    <!--这是标题-->
+    <include layout="@layout/layout_title"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/camera"/>
+        <ImageView
+            android:id="@+id/iv_switch"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/flashlight"/>
+    </LinearLayout>
+    <!-- 这个控件就是扫描的窗口了 -->
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dbv_custom"
+        app:zxing_framing_rect_width="200dp"
+        app:zxing_framing_rect_height="200dp"
+        app:zxing_preview_scaling_strategy="fitXY"
+        app:zxing_use_texture_view="true"
+        app:zxing_scanner_layout="@layout/barcode_scanner"
+       >
+    </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+
+</LinearLayout>

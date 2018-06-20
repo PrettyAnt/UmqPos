@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="textsize_zz">28sp</dimen>
+    <dimen name="textsize_tt">20sp</dimen>
+    <dimen name="textsize_e">26sp</dimen>
+    <dimen name="textsize_ee">26sp</dimen>
+    <dimen name="textsize_edx">24sp</dimen>
+    <dimen name="textsize_d">22sp</dimen>
+    <dimen name="textsize_dd">22sp</dimen>
+    <dimen name="head_height">65dp</dimen>
+    <dimen name="left_distance">10dp</dimen>
+    <dimen name="right_distance">30dp</dimen>
+    <dimen name="title_state_size">32px</dimen>
+    <dimen name="line_to_bottom">10dp</dimen>
+    <dimen name="order_pic_size">90dp</dimen>
+</resources>

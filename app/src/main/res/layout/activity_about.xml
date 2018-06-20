@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#FFFFFF"
+              android:orientation="vertical">
+    <!--这是标题-->
+    <include layout="@layout/layout_title"/>
+    <!--这是商户图标以及其他信息-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <!--这是商户图标-->
+        <ImageView
+            android:id="@+id/iv_setting_about_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            />
+        <!--这是商户信息-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_setting_about_shop"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="--"/>
+
+            <TextView
+                android:id="@+id/tv_setting_about_shopid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="门店编号:"/>
+
+            <TextView
+                android:id="@+id/tv_setting_about_address"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="地址:"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_setting_about_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="联系人:"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_setting_about_tel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="电话:"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--华丽的分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:background="#D6D6D6"/>
+    <!--操作员信息-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="操作员"/>
+
+        <TextView
+            android:id="@+id/tv_setting_about_oper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="--"/>
+    </RelativeLayout>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#D6D6D6"/>
+    <!--联系我们-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="联系我们"/>
+
+        <TextView
+            android:id="@+id/tv_setting_about_connus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="--"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#D6D6D6"/>
+    <!--联系客户经理-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="联系客户经理"/>
+
+        <TextView
+            android:id="@+id/tv_setting_about_mngt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="--"/>
+    </RelativeLayout>
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#D6D6D6"/>
+
+    <TextView
+        android:id="@+id/tv_setting_about_devicesInfo"
+        style="@style/setting_about_item"
+        android:text="当前硬件信息"
+        android:visibility="gone"/>
+    <!--华丽的分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#D6D6D6"/>
+
+    <!--软件版本-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="软件版本"/>
+
+        <TextView
+            android:id="@+id/tv_setting_about_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="1.1"/>
+    </RelativeLayout>
+
+    <!--检查新版本-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#D6D6D6"/>
+
+    <TextView
+        android:id="@+id/tv_setting_about_checkvsn"
+        style="@style/setting_about_item"
+        android:text="检查新版本"/>
+
+    <!--帮助信息-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#D6D6D6"
+        android:visibility="gone"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_setting_about_help"
+        style="@style/setting_about_item"
+        android:text="帮助信息"/>
+
+    <!--投诉建议-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#D6D6D6"
+        android:visibility="gone"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_setting_about_shopcomplain"
+        style="@style/setting_about_item"
+        android:text="投诉建议"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="#D6D6D6"
+        android:layout_marginBottom="10dp"
+       />
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <Button
+            android:id="@+id/bt_exit"
+            android:text="退出登录"
+            android:textColor="#fff"
+            android:background="@drawable/bt_wm_print_red_shap"
+            android:padding="4dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_home_bottom_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="6dp"
+            android:textSize="10sp"
+            android:text="--"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="unionlive.com.umqpos">
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <!--网络访问权限-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--位置权限-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!--当前wifi状态-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!--网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!--wifi改变状态-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+
+    <!--以下是个推的权限配置-开始-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!-- 支持iBeancon 需要蓝牙权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 支持个推3.0 电子围栏功能 -->
+    <!-- 浮动通知权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="getui.permission.GetuiService.${applicationId}"/>
+
+    <permission
+        android:name="getui.permission.GetuiService.${applicationId}"
+        android:protectionLevel="normal"/>
+    <!--以上是个推的权限配置-结束-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/umq_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme1">
+
+        <!--以下是个推的配置信息-开始-->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="${GETUI_APP_ID}"/>
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="${GETUI_APP_KEY}"/>
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="${GETUI_APP_SECRET}"/>
+
+        <!-- 配置SDK核心服务 -->
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.service.message"/>
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.igexin.sdk.PushReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="com.igexin.sdk.action.refreshls"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service
+            android:name="com.igexin.download.DownloadService"
+            android:process=":pushservice"/>
+        <receiver
+            android:name="com.igexin.download.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <provider
+            android:name="com.igexin.download.DownloadProvider"
+            android:authorities="downloads.${applicationId}"
+            android:exported="true"
+            android:process=":pushservice"/>
+
+        <activity
+            android:name="com.igexin.sdk.GActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <!--以上是个推的配置信息-到这里结束-->
+
+
+        <activity android:name=".ui.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.LoginActivity"/>
+        <!--主界面-->
+        <activity
+            android:name=".ui.activity.HomeActivity"
+            android:launchMode="singleTop">
+
+        </activity>
+        <!--电子券验证-->
+        <activity android:name=".ui.activity.coupon_act.CouponExchangeActivity">
+        </activity>
+        <!--电子券验证交易明细-->
+        <activity android:name=".ui.activity.coupon_act.QueryCouponInfoActivity"/>
+        <!--外卖-->
+        <activity android:name=".ui.activity.OrderFoodActivity">
+
+        </activity>
+        <!--外卖的详情界面-->
+        <activity android:name=".ui.activity.OrderDetialActivity"/>
+        <!--外卖修改库存的界面-->
+        <activity android:name=".ui.activity.OrderResertCategoryActivity"/>
+        <!--对话框式的activity-->
+        <activity android:name=".ui.dialog.DialogStyleActivity"
+                  android:theme="@style/act_dialog_style"
+                  android:launchMode="singleInstance"
+           />
+        <activity android:name=".ui.dialog.DialogStyleActivity2"
+                  android:theme="@style/act_dialog_style"
+                  android:launchMode="singleInstance"
+            />
+        <activity android:name=".ui.dialog.DialogStyleCancleActivity"
+                  android:theme="@style/act_dialog_style"
+                  android:launchMode="singleInstance"
+            />
+        <!--这是关于界面-->
+        <activity android:name=".ui.activity.AboutActivity"/>
+        <!--这是扫一扫界面-->
+        <activity android:name=".ui.activity.coupon_act.ScanActivity"/>
+        <!--配置个推的服务-->
+        <!-- 用户自定义服务继承自GTIntentService,作为SDK与APP桥梁服务,用来接收各种消息和命令回复-->
+        <service android:name=".service.DemoIntentService"/>
+
+        <!-- 用户自定义服务名 -->
+        <service
+            android:name=".service.DemoPushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice">
+        </service>
+
+        <!--下载的服务-->
+        <service
+            android:name=".service.ApkDownService"
+            android:exported="true"/>
+    </application>
+
+</manifest>

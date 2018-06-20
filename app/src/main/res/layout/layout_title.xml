@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/title_background"
+              android:layout_width="fill_parent"
+              android:layout_height="@dimen/head_height"
+              android:background="@color/pos_bg"
+              android:gravity="center_vertical"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/head_height"
+        android:background="@color/tite_bg"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/back_common"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:scrollHorizontally="true"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/textsize_tt"/>
+
+        <TextView
+            android:id="@+id/tv_check_trace"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/coupon_color_query_trade"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="交易查询"
+            android:textColor="#fff"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/iv_orderfood_titleright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:src="@drawable/title_right"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+</LinearLayout>

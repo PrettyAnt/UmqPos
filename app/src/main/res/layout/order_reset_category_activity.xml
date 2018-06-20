@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              >
+    <include layout="@layout/layout_title"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/tv_reset_order_manage_shap"
+                    android:gravity="center"
+                    android:text="平台"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tv_reset_order_manage_shap"
+                    android:gravity="center"
+                    android:text="单价"/>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/tv_reset_order_manage_shap"
+                    android:gravity="center"
+                    android:text="库存"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/tv_reset_order_manage_shap"
+                    android:gravity="center"
+                    android:text="操作"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_platform_baidu"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/tv_platform_baidu"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/tv_reset_order_manage_shap"
+                    android:gravity="center"
+                    android:text="--"/>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tv_reset_order_manage_shap">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:text="¥"
+                            android:textSize="40px"/>
+                        <EditText
+                            android:id="@+id/et_order_baidu_price"
+                            android:layout_width="70dp"
+                            android:layout_height="25dp"
+                            android:paddingLeft="6px"
+                            android:gravity="center"
+                            android:background="@drawable/tv_reset_order_manage_shap"
+                            android:textSize="36px"
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/tv_reset_order_manage_shap">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_order_baidu_currentstock"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp"
+                            android:paddingLeft="6px"
+                            android:gravity="center"
+                            android:background="@drawable/tv_reset_order_manage_shap"
+                            android:textSize="36px"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_order_baidu_maxstock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="/--"
+                            android:textSize="36px"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/tv_reset_order_manage_shap"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/bt_order_baidu_statu"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:background="#C4C2C7"
+                        android:text="--"
+                        android:textColor="#fff"
+                        android:clickable="false"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_platform_meituan"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_platform_meituan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/tv_reset_order_manage_shap"
+                    android:gravity="center"
+                    android:text="--"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tv_reset_order_manage_shap">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:text="¥"
+                            android:textSize="40px"/>
+                        <EditText
+                            android:id="@+id/et_order_meituan_price"
+                            android:layout_width="70dp"
+                            android:layout_height="25dp"
+                            android:paddingLeft="6px"
+                            android:gravity="center"
+                            android:background="@drawable/tv_reset_order_manage_shap"
+                            android:textSize="36px"
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/tv_reset_order_manage_shap">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_order_meituan_currentstock"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp"
+                            android:paddingLeft="6px"
+                            android:gravity="center"
+                            android:background="@drawable/tv_reset_order_manage_shap"
+                            android:textSize="36px"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_order_meituan_maxstock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="/--"
+                            android:textSize="36px"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/tv_reset_order_manage_shap"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/bt_order_meituan_statu"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:background="#C4C2C7"
+                        android:text="--"
+                        android:textColor="#fff"
+                        android:clickable="false"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_platform_eleme"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_platform_eleme"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/tv_reset_order_manage_shap"
+                    android:gravity="center"
+                    android:text="--"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/tv_reset_order_manage_shap">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="2dp"
+                            android:text="¥"
+                            android:textSize="40px"/>
+                        <EditText
+                            android:id="@+id/et_order_eleme_price"
+                            android:layout_width="70dp"
+                            android:layout_height="25dp"
+                            android:paddingLeft="6px"
+                            android:gravity="center"
+                            android:background="@drawable/tv_reset_order_manage_shap"
+                            android:textSize="36px"
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/tv_reset_order_manage_shap">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/et_order_eleme_currentstock"
+                            android:layout_width="60dp"
+                            android:layout_height="25dp"
+                            android:paddingLeft="6px"
+                            android:gravity="center"
+                            android:background="@drawable/tv_reset_order_manage_shap"
+                            android:textSize="36px"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_order_eleme_maxstock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:text="/--"
+                            android:textSize="36px"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/tv_reset_order_manage_shap"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/bt_order_eleme_statu"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="1"
+                        android:background="#C4C2C7"
+                        android:text="--"
+                        android:textColor="#fff"
+                        android:clickable="false"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_category_save"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bt_login_shap"
+            android:text="保存"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

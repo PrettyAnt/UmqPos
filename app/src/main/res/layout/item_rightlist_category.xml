@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:padding="10dp"
+              android:layout_height="80dp">
+    <!--修改库存-->
+    <ImageView
+        android:id="@+id/iv_order_category_pic"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_order_category_foodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一心一意蛋糕"
+            android:textSize="32px"
+            android:textStyle="bold"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_order_category_norms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="6寸"
+                android:paddingBottom="4dp"/>
+            <TextView
+                android:id="@+id/tv_order_category_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改库存"
+                android:textSize="28px"
+                android:textColor="#48A9FA"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bt_reset_order_shap"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

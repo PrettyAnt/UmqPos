@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_coupon_detial"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#fff"
+              android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_coupon_detial_info"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="外部接口测试券\n礼券编号:123 **** **** 7890\n兑换次数：1次\n交易时间:2016/01/11 14/23/33"
+        android:textSize="32px"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
+        android:background="#ccc"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+        <TextView
+            android:id="@+id/tv_coupon_refer_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="参考号:1234"
+            android:textSize="32px"/>
+
+        <TextView
+            android:id="@+id/tv_coupon_exchange_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="券号兑换"
+            android:textSize="32px"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="6dp"
+        android:background="#F5F5F5"/>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="#fff"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <!--这是标题-->
+    <include layout="@layout/layout_title"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FDFDFE"
+        >
+        <RadioGroup
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/rb_coupon_today_collect"
+                android:checked="true"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="36px"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:textColor="@drawable/bt_setting_switch_text_selector"
+                android:background="@drawable/coupon_color_title_select"
+                android:text="今日汇总"/>
+
+            <RadioButton
+                android:id="@+id/rb_coupon_today_detial"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:textColor="@drawable/bt_setting_switch_text_selector"
+                android:background="@drawable/coupon_color_title_select"
+                android:textSize="36px"
+                android:text="今日明细"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_coupon_yes_detial"
+                android:padding="10dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:textColor="@drawable/bt_setting_switch_text_selector"
+                android:background="@drawable/coupon_color_title_select"
+                android:textSize="36px"
+                android:text="昨日明细"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#F5F5F5"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_counpon_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_waimai_state"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="#000"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="10dp"
+   >
+
+    <LinearLayout
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_title_channel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_home_baidu"
+                android:text="--"
+                style="@style/title_status_style"/>
+            <TextView
+                android:id="@+id/tv_home_meituan"
+                android:text="--"
+                style="@style/title_status_style"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_home_eleme"
+                android:text="--"
+                style="@style/title_status_style"
+                />
+
+            <TextView
+                android:id="@+id/tv_home_wechat"
+                android:text="--"
+                style="@style/title_status_style"
+                />
+            <TextView
+                android:id="@+id/tv_home_other"
+                android:text="--"
+                style="@style/title_status_style"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--第二行 接单-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已处理:"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:id="@+id/tv_home_order_treate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="--"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="未处理:"
+                android:textColor="#f00"/>
+
+            <TextView
+                android:id="@+id/tv_home_order_untreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="--"
+                android:textColor="#f00"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_home_autoReceive"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/title_plantform_auto_red_shap"
+            android:layout_marginRight="0dp"
+            style="@style/title_status_style"
+            />
+    </RelativeLayout>
+
+    <!--第三行 最近订单-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_home_nearOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="最近订单:"
+                android:textColor="#FFD800"/>
+
+            <TextView
+                android:id="@+id/tv_home_nearTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_home_nearOrder"
+                android:text="--"
+                android:textColor="#FFD800"/>
+
+            <TextView
+                android:id="@+id/tv_home_print_status"
+                android:layout_alignParentRight="true"
+                android:text="--"
+                android:background="@drawable/title_plantform_auto_red_shap"
+                android:layout_marginRight="0dp"
+                style="@style/title_status_style"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <!--第四行 接单人-->
+    <LinearLayout
+        android:id="@+id/ll_home_order_people"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_home_cusInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="--"
+                android:textColor="#FFD800"/>
+
+
+            <TextView
+                android:id="@+id/tv_home_net_state"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/title_plantform_auto_red_shap"
+                android:layout_marginRight="0dp"
+                style="@style/title_status_style"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#ccc"/>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srf_waimai_order_fresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <unionlive.com.umqpos.utils.ElasticScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+                    <Button
+
+                        android:text="总计"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cal_shape_normal"/>
+                    <Button
+                        android:text="今日订单统计"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cal_shape_normal"/>
+                    <Button
+                        android:text="今日营业统计"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cal_shape_normal"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_order_list_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                   >
+                    <Button
+                        android:id="@+id/bt_channel_name_all"
+                        android:text="全部"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cal_shape_normal"/>
+                    <Button
+                        android:id="@+id/bt_all_orderList_amount"
+                        android:text="--"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cal_shape_normal"/>
+                    <Button
+                        android:id="@+id/bt_all_money_amount"
+                        android:text="--"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cal_shape_normal"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_order_list_baidu"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <Button
+                        android:id="@+id/bt_channel_name_baidu"
+                        android:text="百度"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cal_shape_normal"/>
+                    <Button
+                        android:id="@+id/bt_baidu_orderList_amount"
+                        android:text="--"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cal_shape_normal"/>
+                    <Button
+                        android:id="@+id/bt_baidu_money_amount"
+                        android:text="--"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cal_shape_normal"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_order_list_meituan"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <Button
+                        android:id="@+id/bt_channel_name_maituan"
+                        android:text="美团"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cal_shape_normal"/>
+                    <Button
+                        android:id="@+id/bt_meituan_orderList_amount"
+                        android:text="--"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cal_shape_normal"/>
+                    <Button
+                        android:id="@+id/bt_meituan_money_amount"
+                        android:text="--"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cal_shape_normal"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_order_list_eleme"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+                    <Button
+                        android:id="@+id/bt_channel_name_eleme"
+                        android:text="饿了么"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cal_shape_normal"/>
+                    <Button
+                        android:id="@+id/bt_eleme_orderList_amount"
+                        android:text="--"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cal_shape_normal"/>
+                    <Button
+                        android:id="@+id/bt_eleme_money_amount"
+                        android:text="--"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bt_cal_shape_normal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<GridLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:columnCount="3"-->
+                <!--android:rowCount="5">-->
+
+                <!--<Button-->
+                    <!--android:layout_gravity="fill"-->
+                    <!--android:background="@drawable/bt_cal_shape_normal"-->
+                    <!--android:text="总计"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:layout_gravity="fill"-->
+                    <!--android:background="@drawable/bt_cal_shape_normal"-->
+                    <!--android:text="今日订单统计"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:layout_gravity="fill"-->
+                    <!--android:background="@drawable/bt_cal_shape_normal"-->
+                    <!--android:text="今日营业统计"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/bt_channel_name_all"-->
+                    <!--android:layout_gravity="fill"-->
+                    <!--android:background="@drawable/bt_cal_shape_normal"-->
+                    <!--android:text="&#45;&#45;"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/bt_all_orderList_amount"-->
+                    <!--android:layout_gravity="fill"-->
+                    <!--android:background="@drawable/bt_cal_shape_normal"-->
+                    <!--android:text="&#45;&#45;"-->
+                    <!--android:textColor="#3B9CEE"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/bt_all_money_amount"-->
+                    <!--android:layout_gravity="fill"-->
+                    <!--android:background="@drawable/bt_cal_shape_normal"-->
+                    <!--android:text="&#45;&#45;"-->
+                    <!--android:textColor="#3B9CEE"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/bt_channel_name_maituan"-->
+                    <!--android:layout_gravity="fill"-->
+                    <!--android:background="@drawable/bt_cal_shape_normal"-->
+                    <!--android:text="&#45;&#45;"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/bt_meituan_orderList_amount"-->
+                    <!--android:layout_gravity="fill"-->
+                    <!--android:background="@drawable/bt_cal_shape_normal"-->
+                    <!--android:text="&#45;&#45;"-->
+                    <!--android:textColor="#3B9CEE"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/bt_meituan_money_amount"-->
+                    <!--android:layout_gravity="fill"-->
+                    <!--android:background="@drawable/bt_cal_shape_normal"-->
+                    <!--android:text="&#45;&#45;"-->
+                    <!--android:textColor="#3B9CEE"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/bt_channel_name_baidu"-->
+                    <!--android:layout_gravity="fill"-->
+                    <!--android:background="@drawable/bt_cal_shape_normal"-->
+                    <!--android:text="&#45;&#45;"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/bt_baidu_orderList_amount"-->
+                    <!--android:layout_gravity="fill"-->
+                    <!--android:background="@drawable/bt_cal_shape_normal"-->
+                    <!--android:text="&#45;&#45;"-->
+                    <!--android:textColor="#3B9CEE"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/bt_baidu_money_amount"-->
+                    <!--android:layout_gravity="fill"-->
+                    <!--android:background="@drawable/bt_cal_shape_normal"-->
+                    <!--android:text="&#45;&#45;"-->
+                    <!--android:textColor="#3B9CEE"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/bt_channel_name_eleme"-->
+                    <!--android:layout_gravity="fill"-->
+                    <!--android:background="@drawable/bt_cal_shape_normal"-->
+                    <!--android:text="&#45;&#45;"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/bt_eleme_orderList_amount"-->
+                    <!--android:layout_gravity="fill"-->
+                    <!--android:background="@drawable/bt_cal_shape_normal"-->
+                    <!--android:text="&#45;&#45;"-->
+                    <!--android:textColor="#3B9CEE"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/bt_eleme_money_amount"-->
+                    <!--android:layout_gravity="fill"-->
+                    <!--android:background="@drawable/bt_cal_shape_normal"-->
+                    <!--android:text="&#45;&#45;"-->
+                    <!--android:textColor="#3B9CEE"-->
+                    <!--/>-->
+
+            <!--</GridLayout>-->
+        </unionlive.com.umqpos.utils.ElasticScrollView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

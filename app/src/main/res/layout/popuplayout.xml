@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="6dp"
+ >
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:background="@drawable/order_near_day"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        android:layout_alignParentRight="true">
+        <TextView
+            android:id="@+id/tv_treate_advance"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="14dp"
+            android:textSize="32px"
+            android:textStyle="bold"
+            android:text="预订订单"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginRight="6px"
+            android:layout_marginLeft="6px"
+            android:background="#CCCCCC"/>
+
+        <TextView
+            android:id="@+id/tv_treate_chargeback"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="32px"
+            android:textStyle="bold"
+            android:text="已取消订单"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginRight="6px"
+            android:layout_marginLeft="6px"
+            android:background="#CCCCCC"/>
+        <TextView
+            android:id="@+id/tv_treate_all"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="32px"
+            android:textStyle="bold"
+            android:text="全部订单"/>
+    </LinearLayout>
+
+</RelativeLayout>

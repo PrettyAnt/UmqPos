@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">优麦圈智能pos</string>
+    <string name="p02_signin_str01">门店编号</string>
+    <string name="p02_signin_str02">门店操作员编号</string>
+    <string name="p02_signin_str03">密码</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="str38">系统提示</string>
+    <string name="msg_camera_framework_bug">很抱歉，机器人相机出现问题。您可能需要重新启动设备。</string>
+    <string name="str01">确定</string>
+    <string name="str40">正在加载&#8230;</string>
+    <string-array name="tab_manage_names">
+        <item>订单统计</item>
+        <item>库存管理</item>
+        <item>设置</item>
+    </string-array>
+
+</resources>

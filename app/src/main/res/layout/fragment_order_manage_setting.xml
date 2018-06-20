@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <!--百度外卖-->
+        <LinearLayout
+            android:id="@+id/ll_baidu_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_distance"
+            android:layout_marginRight="@dimen/right_distance"
+            android:layout_marginTop="@dimen/line_to_bottom"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_baidu_waimai"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="#333333"
+                android:textSize="@dimen/title_state_size"/>
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_baidu_business_on"
+                    style="@style/setting_btn_state_open_style"
+                    android:text="开"/>
+
+                <RadioButton
+                    android:id="@+id/rb_baidu_switch_off"
+                    style="@style/setting_btn_state_close_style"
+                    android:button="@null"
+                    android:text="关"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+        <!--美团外卖-->
+        <LinearLayout
+            android:id="@+id/ll_meituan_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_distance"
+            android:layout_marginRight="@dimen/right_distance"
+            android:layout_marginTop="@dimen/line_to_bottom"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_meituan_waimai"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="#333333"
+                android:textSize="@dimen/title_state_size"/>
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_meituan_business_on"
+                    style="@style/setting_btn_state_open_style"
+                    android:text="开"/>
+
+                <RadioButton
+                    android:id="@+id/rb_meituan_business_off"
+                    style="@style/setting_btn_state_close_style"
+                    android:button="@null"
+                    android:text="关"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!--饿了么-->
+        <LinearLayout
+            android:id="@+id/ll_eleme_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_distance"
+            android:layout_marginRight="@dimen/right_distance"
+            android:layout_marginTop="@dimen/line_to_bottom"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_eleme_waimai"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="#333333"
+                android:textSize="@dimen/title_state_size"/>
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_eleme_business_on"
+                    style="@style/setting_btn_state_open_style"
+                    android:text="开"/>
+
+                <RadioButton
+                    android:id="@+id/rb_eleme_business_off"
+                    style="@style/setting_btn_state_close_style"
+                    android:button="@null"
+                    android:text="关"
+                    />
+            </RadioGroup>
+        </LinearLayout>
+        <!--微信公众号-->
+        <LinearLayout
+            android:id="@+id/ll_wechat_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_distance"
+            android:layout_marginRight="@dimen/right_distance"
+            android:layout_marginTop="@dimen/top_distance"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_wechat_waimai"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="--"
+                android:textColor="#333333"
+                android:textSize="@dimen/title_state_size"/>
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_wechat_business_on"
+                    style="@style/setting_btn_state_open_style"
+                    android:text="开"/>
+
+                <RadioButton
+                    android:id="@+id/rb_wechat_business_off"
+                    style="@style/setting_btn_state_close_style"
+                    android:button="@null"
+                    android:text="关"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="@dimen/line_to_bottom"
+            android:layout_marginTop="@dimen/line_to_bottom"
+            android:background="#ccc"/>
+        <!--自动接单-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_distance"
+            android:layout_marginRight="@dimen/right_distance"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="自动 接单"
+                android:textColor="#333333"
+                android:textSize="@dimen/title_state_size"/>
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_autoreceive_switch_on"
+                    style="@style/setting_btn_state_open_style"
+                    android:text="开"/>
+
+                <RadioButton
+                    android:id="@+id/rb_autoreceive_business_off"
+                    style="@style/setting_btn_state_close_style"
+                    android:button="@null"
+                    android:text="关"
+                    />
+            </RadioGroup>
+
+        </LinearLayout>
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginBottom="@dimen/line_to_bottom"
+            android:layout_marginTop="@dimen/line_to_bottom"
+            android:background="#ccc"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_distance"
+            android:layout_marginRight="@dimen/right_distance">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="打印机"
+                android:textColor="#333333"
+                android:textSize="@dimen/title_state_size"/>
+            <!--打印机-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt_setting_self_print"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/bt_setting_blueprint_shap"
+                    android:gravity="center"
+
+                    android:text="内置打印机"
+                    />
+
+                <Spinner
+                    android:id="@+id/spi_setting_bule_print"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:spinnerMode="dropdown"
+                    android:textColor="#fff"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_setting_print_test"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_setting_certain_shap"
+                android:gravity="center"
+                android:text="打印测试"
+                android:textColor="#fff"
+                />
+        </LinearLayout>
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="@dimen/top_distance"
+            android:background="#ccc"/>
+        <!--分割线-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/bt_setting_exit_waimai"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bt_wm_print_red_shap"
+                android:text="退出外卖"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

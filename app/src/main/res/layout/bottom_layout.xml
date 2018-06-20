@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_orderfood_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_orderfood">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#CCCCCC"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FDFDFE"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <RadioButton
+            android:id="@+id/rb_orderfood_untreated"
+            style="@style/orderfood_bottom_rb_style"
+            android:checked="true"
+            android:text="未处理"/>
+
+        <RadioButton
+            android:id="@+id/rb_orderfood_treated"
+            style="@style/orderfood_bottom_rb_style"
+            android:text="已处理"
+            />
+
+        <RadioButton
+            android:id="@+id/rb_orderfood_manage"
+            style="@style/orderfood_bottom_rb_style"
+            android:text="管理"
+            />
+
+    </RadioGroup>
+</LinearLayout>
