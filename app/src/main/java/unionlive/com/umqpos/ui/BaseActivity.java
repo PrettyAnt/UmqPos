@@ -55,7 +55,9 @@ import static com.landicorp.android.eptapi.device.Printer.ERROR_OVERHEAT;
 import static com.landicorp.android.eptapi.device.Printer.ERROR_PAPERENDED;
 import static com.landicorp.android.eptapi.device.Printer.ERROR_PAPERJAM;
 
-
+/**
+ * @Author's GitHub  https://github.com/PrettyAnt
+ */
 public class BaseActivity extends AppCompatActivity {
 
     public    TranslateAnimation mAlphaAnimation;
